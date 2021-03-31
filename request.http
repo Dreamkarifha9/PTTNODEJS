@@ -1,0 +1,22 @@
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InB0dGRpZ2l0YWwiLCJpYXQiOjIzMTYyMzkwMjJ9.Qe2BWUZ-QAw6iuTzCMVo5rq4O-_vYFmBfZB5VwtQ5Qc
+
+### GET testget
+GET  http://localhost:3000/testget
+Authorization: Bearer {{token}}
+
+### POST testpost
+POST  http://localhost:3000/testpost
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "data":[{
+  "Testdata_string": "0",
+  "Testdata_integer": 1.0
+},
+{
+  "Testdata_string": "00",
+  "Testdata_integer": 2.0
+}
+]
+}
